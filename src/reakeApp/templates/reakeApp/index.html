@@ -1,9 +1,13 @@
 {% load render_bundle from webpack_loader %}
+{% load static %}
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
         <title>リアルタイムアンケート</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static "css/style.css" %}"
     </head>
-    <body>
-        <input type="submit" value="Start">
+    <body class="body">
+        <h2 class="title">リアルタイムアンケート</h2>
+        <input class="btn-circle-flat" type="submit" value="Start">
     </body>
